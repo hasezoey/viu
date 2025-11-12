@@ -43,10 +43,10 @@ impl<'a> Config<'a> {
             y,
             transparent,
             absolute_offset,
-            use_kitty: !use_blocks,
-            use_iterm: !use_blocks,
+            use_kitty: false,
+            use_iterm: true,
             #[cfg(feature = "sixel")]
-            use_sixel: !use_blocks,
+            use_sixel: false,
             ..Default::default()
         };
 
