@@ -1304,7 +1304,7 @@ dependencies = [
 [[package]]
 name = "viuer"
 version = "0.9.2"
-source = "git+https://github.com/hasezoey/viuer.git?branch=queryIterm2Support#1761b51322186a54c737751e5430b2890a874e10"
+source = "git+https://github.com/hasezoey/viuer.git?branch=queryIterm2Support#64ed443e013913e37772441296becb85b548d6b1"
 dependencies = [
  "ansi_colours",
  "base64",
