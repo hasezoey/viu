@@ -36,11 +36,14 @@ impl<'a> Config<'a> {
         let use_blocks = matches.get_flag("blocks");
         let transparent = matches.get_flag("transparent");
 
-        eprintln!("Kitty Support: {:#?}", match  viuer::get_kitty_support(){
-            viuer::KittySupport::None => "none",
-            viuer::KittySupport::Local => "local",
-            viuer::KittySupport::Remote => "remote"
-        });
+        eprintln!(
+            "Kitty Support: {:#?}",
+            match viuer::get_kitty_support() {
+                viuer::KittySupport::None => "none",
+                viuer::KittySupport::Local => "local",
+                viuer::KittySupport::Remote => "remote",
+            }
+        );
 
         let viuer_config = ViuerConfig {
             width,
